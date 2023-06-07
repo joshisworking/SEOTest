@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "SEO";
+}
+
+<div id="entry">
+<h2 class="mb-3">Analyze Text</h2>
+<form asp-action="Index" method="post">
+    <div class="my-4" id="options">
+        <h4>Options</h4>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="action-type" />
+            <label class="form-check-label" for="action-type">Process client side (for text submission only)</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="input-text" name="InputOption" value="text" checked/>
+            <label class="form-check-label" for="input-option">Text Entry</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="input-url" name="InputOption" value="url"/>
+            <label class="form-check-label" for="input-option">URL Entry</label>
+        </div>
+    </div>
+
+    <div class="my-4" id="submission">
+        <h4>Submission</h4>
+        <div class="mb-3" id="text-submission">
+            <label for="sample-text">Enter Sample Text:</label>
+            <textarea id="sample-text" name="SampleText" class="form-control"></textarea>
+        </div>
+        <div class="mb-3" id="url-submission" style="display:none">
+            <label for="sample">Enter URL:</label>
+            <input id="sample-url" name="SampleURL" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+</form>
+</div>
+<div id="results" style="display:none">
+    <h1>Analysis Results</h1>
+    <table class="table table-striped" id="resultsTable">
+        <thead>
+            <tr>
+                <th id="wordHeader">Word</th>
+                <th id="countHeader">Count</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+</div>
+

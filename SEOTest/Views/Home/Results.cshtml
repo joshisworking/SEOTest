@@ -1,0 +1,24 @@
+﻿@model List<KeyValuePair<string, int>>
+@{
+    ViewData["Title"] = "Results";
+}
+
+<h1>Analysis Results</h1>
+
+<table class="table table-striped" id="resultsTable">
+    <thead>
+        <tr>
+            <th id="wordHeader">Word</th>
+            <th id="countHeader">Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (KeyValuePair<string, int> entry in Model)
+{
+                <tr>
+                    <td>@entry.Key</td>
+                    <td>@entry.Value</td>
+                </tr>
+}
+    </tbody>
+</table>
