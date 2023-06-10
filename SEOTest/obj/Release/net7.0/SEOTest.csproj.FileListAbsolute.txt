@@ -34,5 +34,3 @@
 /Users/user/Projects/SEOTest/SEOTest/bin/Release/net7.0/Newtonsoft.Json.dll
 /Users/user/Projects/SEOTest/SEOTest/obj/Release/net7.0/SEOTest.csproj.CopyComplete
 /Users/user/Projects/SEOTest/SEOTest/bin/Release/net7.0/HtmlAgilityPack.dll
-/Users/user/Projects/SEOTest/SEOTest/bin/Release/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
-/Users/user/Projects/SEOTest/SEOTest/bin/Release/net7.0/PuppeteerSharp.dll
